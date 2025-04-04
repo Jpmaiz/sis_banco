@@ -1,4 +1,4 @@
-#include "CuentaPlazoFijo.h"
+﻿#include "CuentaPlazoFijo.h"
 
 CuentaPlazoFijo::CuentaPlazoFijo(int nroCuenta, float saldo, Cliente* propietario, Fecha fechaApertura, Fecha fechaVencimiento)
     : Cuenta(nroCuenta, saldo, propietario, fechaApertura)
@@ -14,7 +14,7 @@ bool CuentaPlazoFijo::retirar(float monto, Fecha fechaActual) {
 
         if (monto <= saldo) {
             saldo = saldo - monto;
-            agregarOperacion(RETIRO, monto, fechaActual); // ? historial
+            agregarOperacion(RETIRO, monto, fechaActual); // ← historial
             fechaUltimaOperacion = fechaActual;
             return true;
         }
@@ -60,7 +60,5 @@ void CuentaPlazoFijo::mostrar()
         cout << "No se ha realizado ninguna operacion aun." << endl;
     }
 
-    if (propietario != nullptr) {
-        cout << "Cliente: " << propietario->getNombre() << endl;
-    }
+
 }

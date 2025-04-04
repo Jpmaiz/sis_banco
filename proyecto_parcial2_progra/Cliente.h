@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>	
 #include <string>	
+//#include "Cuenta.h"
 #include "ModuloCuenta.h"
 
 using namespace std;

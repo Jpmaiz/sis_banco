@@ -129,9 +129,6 @@ void CuentaCorriente::mostrar()
     fechaUltimaOperacion.mostrar();
     cout << endl;
 
-    // Opcional: mostrar el nombre del cliente
-    if (propietario != nullptr) {
-        cout << "Cliente: " << propietario->getNombre() << endl;
-    }
+
 }
 

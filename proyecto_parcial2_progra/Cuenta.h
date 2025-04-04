@@ -3,7 +3,9 @@
 #include <string>	
 #include "Fecha.h"
 #include "ModuloOperacio.h"
-#include "Cliente.h"
+//#include "Cliente.h"
+
+class Cliente;
 
 using namespace std;
 
