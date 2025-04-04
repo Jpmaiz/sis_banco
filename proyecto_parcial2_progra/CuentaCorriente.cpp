@@ -33,13 +33,13 @@ bool CuentaCorriente::retirar(float monto, Fecha fechaActual)
         saldo = 0;
         sobregiroMensual = sobregiroMensual + diferencia;
 
-        if (sobregiroTotalTentativo > 1000.0f) 
+        if (sobregiroTotalTentativo > 1000.0) 
         {
-            float excedente = sobregiroTotalTentativo - 1000.0f;
+            float excedente = sobregiroTotalTentativo - 1000.0;
             if (excedente > sobregiroYaCobrado) 
             {
                 float nuevoExcedente = excedente - sobregiroYaCobrado;
-                float comision = (nuevoExcedente * 5.0f) / 100.0f;
+                float comision = (nuevoExcedente * 5.0) / 100.0;
 
                 deuda = deuda + comision;
                 sobregiroYaCobrado = sobregiroYaCobrado + nuevoExcedente;

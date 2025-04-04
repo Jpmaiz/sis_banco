@@ -43,3 +43,7 @@ void CuentaAhorro::aplicarInteresMensual(Fecha fechaActual)
         ultimoAnioInteres = fechaActual.getAnio();
     }
 }
+
+void CuentaAhorro::mostrar()
+{
+}

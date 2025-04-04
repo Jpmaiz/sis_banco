@@ -9,6 +9,9 @@ Operacion::Operacion(TipoOperacion tipo, float monto, Fecha fecha)
 
 void Operacion::mostrar() const
 {
+	cout << getTipoTexto()
+		<< " | Monto: " << monto
+		<< " | Fecha: " << fecha.toString() << endl;
 }
 
 string Operacion::getTipoTexto() const

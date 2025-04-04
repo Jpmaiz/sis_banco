@@ -22,6 +22,11 @@ public:
 
 	ModuloCliente& getClientes();
 
+	void agregarCliente(int ci, const string& nombre, const string& apellido);
+	Cliente* buscarCliente(int ci);
+	void mostrarClientes();
+
+
 
 	void mostrar();
 };

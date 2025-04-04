@@ -52,6 +52,11 @@ void Cliente::agregarCuenta(Cuenta* cuenta)
 	cuentas.agregarCuenta(cuenta);
 }
 
+void Cliente::mostrarCuentas()
+{
+	cuentas.mostrar();	
+}
+
 void Cliente::mostrar()
 {
 	cout << "CI: " << ci << endl;

@@ -34,7 +34,7 @@ public:
 
 	void agregarCuenta(Cuenta* cuenta);
 
-
+	void mostrarCuentas();
 
 	void mostrar();
 

@@ -22,6 +22,17 @@ public:
 	void agregarCuenta(Cuenta* cuenta);
 	Cuenta* buscar(int nroCuenta);
 
+	int getIndice() {
+		return ind;
+	}
+
+
+	Cuenta* buscarPorPosicion(int pos) const {
+		if (pos >= 0 && pos < ind)
+			return cuentas[pos];
+		return nullptr;
+	}
+
 	void mostrar();
 };
 

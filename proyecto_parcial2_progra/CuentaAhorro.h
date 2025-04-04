@@ -11,5 +11,7 @@ public:
 
     bool retirar(float monto, Fecha fechaActual) override;
     void depositar(float monto, Fecha fechaActual) override;
-    void aplicarInteresMensual(Fecha fechaActual);
+    void aplicarInteresMensual(Fecha fechaActual) ;
+
+    void mostrar() override;
 };
